@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+}
+
+/****Global****/
+body {
+    background-color: #000000;
+    background-image: linear-gradient(160deg, #000000 0%, #353535 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+a {
+    text-decoration: none;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin-inline: 2rem;
+    padding-inline: 0;
+}
+
+/*****Header******/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 400px;
+    filter: drop-shadow(0px 0px 3px white);
+
+}
+.nav{
+    width: 100%;
+    display: flex;
+}
+.nav_link {
+    color: hsl(0, 0%, 55%);
+    margin: 0 1.5rem;
+    font-size: 1.5rem;
+}
+.nav_link:hover {
+    transition: 0.5s;
+    color: white;
+}
+li {
+    list-style: none;
+}
+/******Main*******/
+.titulo{
+    margin-top: 6rem;
+    text-align: center;
+    font-size: 3rem;
+    color: hsl(0, 0%, 55%);
+}
+.seccion{
+    background-color: hsla(0, 0%, 0%, 0.281);
+    height: 30rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.seccion_foto {
+    width: 200px;
+    height: 200px;
+    filter: drop-shadow(0px 0px 10px white);
+}
+.cs2{
+    border-radius: 30px;
+}
+.contenido {
+    width: 300px;
+    text-align: center;
+}
+.seccion_titulo {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-shadow: 0px 0px 2px white;
+}
+
+/****boton*****/
+button {
+    position: relative;
+    height: 50px;
+    padding: 0 30px;
+    border: 3px solid #000;
+    background: hsl(0, 0%, 55%);
+    white-space: nowrap;
+    transition: all .05s linear;
+    font-family: inherit;
+   }
+   
+   button:before, button:after {
+    content: "";
+    position: absolute;
+    background: hsl(0, 0%, 55%);
+    transition: all .2s linear;
+   }
+   
+   button:before {
+    width: calc(100% + 6px);
+    height: calc(100% - 16px);
+    top: 8px;
+    left: -3px;
+   }
+   
+   button:after {
+    width: calc(100% - 16px);
+    height: calc(100% + 6px);
+    top: -3px;
+    left: 8px;
+   }
+   
+   button:hover {
+    cursor: crosshair;
+   }
+   
+   button:active {
+    transform: scale(0.95);
+   }
+   
+   button:hover:before {
+    height: calc(100% - 32px);
+    top: 16px;
+   }
+   
+   button:hover:after {
+    width: calc(100% - 32px);
+    left: 16px;
+   }
+   
+   button span {
+    font-size: 15px;
+    z-index: 3;
+    position: relative;
+    font-weight: 600;
+   }
+/*****Footer*******/
+.derechos {
+    margin: 1rem 0;
+    text-align: center;
+}
