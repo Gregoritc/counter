@@ -17,8 +17,10 @@ body {
     background-size: cover;
 
 }
+
 a {
     text-decoration: none;
+    color: hsl(0, 0%, 55%);
 }
 
 .contenedor {
@@ -33,53 +35,95 @@ a {
     justify-content: space-between;
     align-items: center;
 }
-.logo{
-    width: 400px;
+
+.logo {
+    width: 330px;
     filter: drop-shadow(0px 0px 3px white);
 
 }
-.nav{
+
+.nav {
     width: 100%;
     display: flex;
 }
+
 .nav_link {
     color: hsl(0, 0%, 55%);
-    margin: 0 1.5rem;
-    font-size: 1.5rem;
+    margin: 0 1.3rem;
+    font-size: 1.1rem;
 }
+
 .nav_link:hover {
-    transition: 0.5s;
+    transition: 0.3s;
     color: white;
 }
+
 li {
     list-style: none;
 }
+
 /******Main*******/
-.titulo{
+.main {
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px hsla(0, 0%, 0%, 0.705);
+}
+
+.titulo_historia {
+    text-align: center;
+    margin: 2rem;
+}
+
+.seccion_historia {
+    height: 400px;
+    background-color: hsl(0, 0%, 47%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.video_historia {
+    box-shadow: 0px 0px 15px black;
+    border-radius: 10px;
+    width: 420px;
+    height: 250px;
+
+}
+
+.historia_descripcion {
+    width: 300px;
+}
+
+.titulo {
     margin-top: 6rem;
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: hsl(0, 0%, 55%);
 }
-.seccion{
-    background-color: hsla(0, 0%, 0%, 0.281);
+
+/****secciones********/
+.seccion {
     height: 30rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
+
 .seccion_foto {
     width: 200px;
     height: 200px;
     filter: drop-shadow(0px 0px 10px white);
 }
-.cs2{
+
+.cs2 {
     border-radius: 30px;
 }
+
 .contenido {
     width: 300px;
     text-align: center;
 }
+
 .seccion_titulo {
     font-size: 2rem;
     margin-bottom: 1rem;
@@ -96,53 +140,65 @@ button {
     white-space: nowrap;
     transition: all .05s linear;
     font-family: inherit;
-   }
-   
-   button:before, button:after {
+}
+
+button:before,
+button:after {
     content: "";
     position: absolute;
     background: hsl(0, 0%, 55%);
     transition: all .2s linear;
-   }
-   
-   button:before {
+}
+
+button:before {
     width: calc(100% + 6px);
     height: calc(100% - 16px);
     top: 8px;
     left: -3px;
-   }
-   
-   button:after {
+}
+
+button:after {
     width: calc(100% - 16px);
     height: calc(100% + 6px);
     top: -3px;
     left: 8px;
-   }
-   
-   button:hover {
+}
+
+button:hover {
     cursor: crosshair;
-   }
-   
-   button:active {
+}
+
+button:active {
     transform: scale(0.95);
-   }
-   
-   button:hover:before {
+}
+
+button:hover:before {
     height: calc(100% - 32px);
     top: 16px;
-   }
-   
-   button:hover:after {
+}
+
+button:hover:after {
     width: calc(100% - 32px);
     left: 16px;
-   }
-   
-   button span {
+}
+
+button span {
     font-size: 15px;
     z-index: 3;
     position: relative;
     font-weight: 600;
-   }
+}
+
+/*****Mapas*****/
+.mapas {}
+
+.titulo_mapas {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 2rem;
+    color: hsl(0, 0%, 55%);
+}
+
 /*****Footer*******/
 .derechos {
     margin: 1rem 0;
