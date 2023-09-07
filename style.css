@@ -135,9 +135,10 @@ li {
     .historia_descripcion {
         padding-bottom: 1rem;
         text-align: center;
+        font-size: .9rem;
     }
     .video_historia{
-        width: 380px;
+        width: 320px;
         height: 200px;
     }
 }
